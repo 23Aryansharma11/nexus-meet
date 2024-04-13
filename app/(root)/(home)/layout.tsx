@@ -1,7 +1,14 @@
 import Sidebar from '@/components/Sidebar';
 import NavBar from '@/components/NavBar';
 import React, {ReactNode} from 'react';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: "Nexus Meet",
+  description: "Video Calling App",
+  icons:{
+    icon: "/icons/logo.svg"
+  }
+};
 const HomeLayout = ({children}: {children: ReactNode}) => {
   return (
     <main className='relative'>

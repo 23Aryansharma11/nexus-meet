@@ -1,4 +1,4 @@
-import React from 'react'
+import MeetingTypeList from '@/components/MeetingTypeList'
 
 const Home = () => {
   const now = new Date()
@@ -20,8 +20,8 @@ const Home = () => {
               <p className=' text-lg font-medium text-sky-1 lg:text-2xl'>{date}</p>
             </div>
         </div>
-
       </div>
+      <MeetingTypeList />
     </section>
   )
 }

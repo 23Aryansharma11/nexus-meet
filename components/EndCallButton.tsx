@@ -9,7 +9,7 @@ import { useCall, useCallStateHooks } from '@stream-io/video-react-sdk'
 import React from 'react'
 import { Button } from './ui/button';
 import { useRouter } from 'next/navigation';
-import { PhoneOff } from 'lucide-react';
+import { PhoneMissed, PhoneOff } from 'lucide-react';
 
 const EndCallButton = () => {
     const call = useCall();
@@ -28,7 +28,7 @@ const EndCallButton = () => {
         await call.endCall();
         router.push('/')
     }} className=' bg-red-500 text-white rounded-full'>
-        <PhoneOff size={20}/>
+       <PhoneMissed size={20} />
         </Button>
         </TooltipTrigger>
       <TooltipContent className="bg-dark-1 border-0">
